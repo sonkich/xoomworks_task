@@ -1,21 +1,23 @@
 import React from 'react';
-import styles from './Header.module.css';
-import { Link } from "react-router-dom";
+import styles from './Header.module.scss';
+import { NavLink } from "react-router-dom";
 
 const Header = () => {
     return (
         <header className={styles.header}>
-            <p>Xoomworks</p>
-            <nav>
-                <ul>
-                    <li>
-                        <Link to="/employees">Employees</Link>
-                    </li>
-                    <li>
-                        <Link to="/create-employee">Create</Link>
-                    </li>
-                </ul>
-            </nav>
+            <div className={styles.innerWrapper}>
+                <p className={styles.headerTitle}>Xoomworks</p>
+                <nav className={styles.nav}>
+                    <ul>
+                        <li>
+                            <NavLink to="/employees">Employees</NavLink>
+                        </li>
+                        <li>
+                            <NavLink to="/create-employee">Create</NavLink>
+                        </li>
+                    </ul>
+                </nav>
+            </div>
         </header>
     );
 };
