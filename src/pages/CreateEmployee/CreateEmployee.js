@@ -34,7 +34,7 @@ const CreateEmployee = () => {
     const [employee, setEmployee] = useState(employeeTemplate);
     const history = useHistory();
 
-    const handleSubmit = (event) => {
+    const handleSubmit = () => {
         request({
             method: 'post',
             url: `/employee`,
