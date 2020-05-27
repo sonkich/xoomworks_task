@@ -34,7 +34,7 @@ const Form = (props) => {
                 })
             }
             <div className={styles.buttonWrapper}>
-                <button type="submit">{buttonText}</button>
+                <button data-testid="form-submit-button" type="submit">{buttonText}</button>
             </div>
         </form>
     );
@@ -50,7 +50,8 @@ Form.propTypes = {
 };
 
 Form.defaultProps = {
-    buttonText: 'Save'
+    buttonText: 'Save',
+    title: 'Form'
 };
 
 export default Form;
