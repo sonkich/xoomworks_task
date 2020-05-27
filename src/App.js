@@ -1,5 +1,5 @@
 import React from 'react';
-import './App.css';
+import './App.scss';
 import { Header } from './components';
 import { Route, Switch, BrowserRouter as Router, Redirect } from 'react-router-dom';
 import { CreateEmployee, Employee, Employees } from './pages';

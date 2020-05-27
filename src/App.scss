@@ -1,0 +1,29 @@
+.App {
+    padding-bottom: 20px;
+}
+
+button {
+    display: inline-block;
+    border: none;
+    padding: 10px 15px;
+    margin: 0;
+    text-decoration: none;
+    background: dodgerblue;
+    color: #ffffff;
+    font-family: sans-serif;
+    font-size: 1rem;
+    cursor: pointer;
+    text-align: center;
+    border-radius: 3px;
+
+    a {
+        display: inline-block;
+        color: white;
+        text-decoration: none;
+    }
+}
+
+button:hover,
+button:focus {
+    background: #0053ba;
+}

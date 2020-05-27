@@ -1,0 +1,28 @@
+.employeeListWrapper {
+  max-width: 1366px;
+  width: 100%;
+  margin: 0 auto;
+  border: 1px solid black;
+}
+
+.employeeListHeaderCell {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 20%;
+  padding: 15px 5px;
+  font-weight: bold;
+  background-color: rgba(dodgerblue, 0.2);
+
+  &:first-child {
+    justify-content: flex-start;
+  }
+
+  &:last-child {
+    justify-content: flex-end;
+  }
+}
+
+.employeeListHeader {
+  display: flex;
+}

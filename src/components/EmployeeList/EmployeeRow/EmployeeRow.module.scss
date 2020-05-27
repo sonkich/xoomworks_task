@@ -1,0 +1,29 @@
+.rowWrapper {
+  display: flex;
+  justify-content: space-between;
+  border-bottom: 1px solid black;
+
+  &:last-child {
+    border-bottom: none;
+  }
+}
+
+.cell {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 15px 5px;
+  width: 20%;
+
+  &:first-child {
+    justify-content: flex-start;
+  }
+
+  &:last-child {
+    justify-content: flex-end;
+  }
+
+  button {
+    margin-left: 5px;
+  }
+}

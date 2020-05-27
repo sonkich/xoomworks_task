@@ -6,6 +6,10 @@ const client = axios.create({
 });
 
 const request = function(options) {
+    if (!options.method) {
+        options.method = 'get';
+    }
+
     const onSuccess = function(response) {
         return response.data;
     };
